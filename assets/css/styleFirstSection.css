@@ -3,7 +3,7 @@
 @font-face { font-family: D-DIN; font-weight: condensed; src: url('../fonts/D-DINCondensed.otf');}
 @font-face { font-family: D-DIN; font-weight: bold; src: url('../fonts/D-DINCondensed-Bold.otf');}
 *{
-    font-family: 'D-DIN', 'Segoe UI', sans-serif !important;
+    font-family: 'D-DIN', 'Segoe UI', sans-serif;
 }
 
 /* First section */
@@ -62,14 +62,16 @@ h2.title-mentoria{
 section.second-section{
     background-color: #011913;
     height: auto;
-    padding: 0;
+    padding: 50px 0;
     text-align: center;
 }
 .subtitle{
     text-align: center;
     color: white;
     max-width: 750px;
-    margin: 0 auto;
+    margin: 48px auto;
+    font-size: 2em;
+    font-weight: bold;
 }
 .green-background-text{
     color: #001E1F;
@@ -133,4 +135,14 @@ section.second-section{
 }
 .white-text{
     color: white;
+}
+.questions > p{
+    color: white;
+}
+.row .questions:nth-child(-n+4){
+    border-right: 2px solid #00E1BE;
+}
+.img-third-section{
+    max-width: 900px;
+    margin: auto 0;
 }
