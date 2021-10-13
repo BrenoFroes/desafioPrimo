@@ -1,0 +1,136 @@
+@font-face { font-family: D-DIN; src: url('D-DIN.otf'); } 
+@font-face { font-family: D-DIN; font-weight: bolder; src: url('../fonts/D-DIN-Bold.otf');}
+@font-face { font-family: D-DIN; font-weight: condensed; src: url('../fonts/D-DINCondensed.otf');}
+@font-face { font-family: D-DIN; font-weight: bold; src: url('../fonts/D-DINCondensed-Bold.otf');}
+*{
+    font-family: 'D-DIN', 'Segoe UI', sans-serif !important;
+}
+
+/* First section */
+div.line-1{
+    background-color: #00E1BE;
+    height: 78px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: center;
+}
+section.first-section{
+    background-color: #011913;
+    max-height: 660px;
+    padding: 0;
+}
+h2.title-mentoria{
+    color: white;
+    font-size: 4em;
+    letter-spacing: 0.1em;
+}
+.texts-1{
+    margin: 50px auto 0 auto;
+    padding: 5px 15px 0 15px;
+}
+.title-smart{
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.text-aprenda{
+    color: white;
+    max-width: 350px;
+}
+.green-text{
+    color: #00E1BE;
+}
+.column-center{
+    display: flex;
+    align-items: center;
+}
+.img-first-section{
+    margin-top: -83px;
+    max-height: 610px;
+}
+.btn-green{
+    text-transform: uppercase;
+    color: #090C0B;
+    background-color: #00E1BE;
+    font-weight: 700;
+}
+
+/* Second section */
+section.second-section{
+    background-color: #011913;
+    height: auto;
+    padding: 0;
+    text-align: center;
+}
+.subtitle{
+    text-align: center;
+    color: white;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.green-background-text{
+    color: #001E1F;
+    background-color: #00E1BE;
+    max-width: 150px;
+}
+.list-benefits{
+    width: fit-content;
+    color: white;
+    list-style: none;
+}
+.list-benefits> li:before {
+    width: fit-content;
+    content:'\2022';
+    color: #00E1BE;
+    position: relative;
+    top: 0;
+    left: 0;
+}    
+.dark-green-text{
+    color: #001E1F;
+}
+.background-green{
+    padding: 15px;
+    background-color: #036060;
+}
+
+/* Third section */
+.third-section{
+    background-color: #011913;
+    padding: 20px;
+}
+.text-tudo{
+    color: #00E1BE;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-left: auto;
+    min-width: 200px;
+    width: min-content;
+}
+.text-tudo > span{
+    margin-left: auto;
+}
+.text-logo-mentoria-1{
+    color: white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.text-logo-mentoria-2{
+    color: white;
+    font-size: 5.5em;
+    font-weight: bolder;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+.white-text{
+    color: white;
+}
