@@ -1,5 +1,5 @@
 
-
+/* Desktops */
 @media (max-width: 992px) {
     section{
         margin-top: -1px;
@@ -19,6 +19,7 @@
     .text-bonus{
         font-size: 5em;
     }
+    
 }
 
 /* Tablets */
@@ -47,7 +48,7 @@
     .subtitle{
         font-size: 2em;
     }
-    .list-benefits{
+    .list-benefits> li{
         font-size: 1em;
     }
     .green-background-text{
@@ -72,8 +73,8 @@
         border-right: none;
         border-bottom: 2px solid #00E1BE;
     }
-    .questions{
-        padding: 20px 0 !important;
+    .third-section > div > div > .questions{
+        padding: 20px 0;
     }
     .title-desktop{
         display: none;
@@ -91,7 +92,7 @@
     }
     .content-mobile{
         display: inherit;
-        margin: 5rem 0;
+        margin: 5rem 0 10rem 0;
     }
     .content-desktop{
         display: none;
@@ -141,15 +142,15 @@
         padding: 0 0 20px 20px;
     }
     .content-mobile > .group-column-3 > div > p {
-        margin: 0 0 -10px 0 !important;
+        margin: 0 0 -10px 0;
         min-width: 223px;
-        width: 100% !important;
+        width: 100%;
         padding: 0 5px 0 0;
         background-color: #E0E0E0;
     }
-    .group-text-5{
+    .content-mobile > .group-column-3 > .group-text-5{
         height: 0;
-        padding: 0 0 0 20px !important;
+        padding: 0 0 0 20px;
     }
     .group-text-5 > .row{
         padding: 0;
@@ -203,7 +204,10 @@
         margin: auto 0;
     }
     .text-empreendedor{
-        font-size: 1.2em;
+        font-size: 1em;
+    }
+    .text-participa{
+        font-size: 0.7em;
     }
 }
 
@@ -225,9 +229,18 @@
         line-height: 1;
         max-width: 200px;
     }
+    .column-img{
+        margin: -20px -30px 0 -30px;
+        min-height: 200px;
+        padding: 0;
+    }
+
+    /* Fifth section */
     .text-bonus{
         font-size: 3em;
     }
+
+    /* Sixth section */
     .text-price-1{
         font-size: 1em;
     }
@@ -244,5 +257,15 @@
     }
     .sixth-line{
         width: 80%;
+    }
+
+    /* Eigth section */
+    .text-joao{
+        font-size: 2.5em;
+        line-height: 1;
+    }
+    .text-maior{
+        font-size: 1em;
+        margin: auto 0;
     }
 }
