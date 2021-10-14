@@ -2,12 +2,13 @@
 @font-face { font-family: D-DIN; font-weight: bold; src: url('../fonts/D-DINCondensed-Bold.otf');}
 *{
     font-family: 'D-DIN', 'Segoe UI', sans-serif;
+    max-width: 100%;
 }
 img{
     max-width: 100%;
 }
 /* First section */
-div.line-1{
+.line-1{
     background-color: #00E1BE;
     height: 78px;
     position: relative;
@@ -15,13 +16,13 @@ div.line-1{
     display: flex;
     align-items: center;
 }
-section.first-section{
+.first-section{
     background-color: #011913;
     height: auto;
-    max-height: 700px;
+    max-height: 900px;
     padding: 0;
 }
-h2.title-mentoria{
+.title-mentoria{
     color: white;
     font-size: 5em;
     letter-spacing: 0.1em;
@@ -50,6 +51,10 @@ h2.title-mentoria{
     display: flex;
     align-items: center;
 }
+.column-img{
+    min-height: 294px;
+    height: auto;
+}
 .img-first-section{
     margin-top: -83px;
     max-height: 700px;
@@ -65,7 +70,7 @@ h2.title-mentoria{
 }
 
 /* Second section */
-section.second-section{
+.second-section{
     background-color: #011913;
     height: auto;
     padding: 70px 0;
@@ -90,6 +95,7 @@ section.second-section{
     width: fit-content;
     color: white;
     list-style: none;
+    padding: 0;
 }
 .list-benefits > li{
     font-size: 1.5em;
@@ -152,17 +158,23 @@ section.second-section{
 .white-text{
     color: white;
 }
+.questions{
+    padding: 10px;
+}
 .questions > p{
     color: white;
     font-size: 1.5em;
     margin: 0;
 }
-.row .questions:nth-child(-n+4){
+.row > .questions:nth-child(-n+4){
     border-right: 2px solid #00E1BE;
 }
 .img-third-section{
     max-width: 900px;
     margin: auto 0;
+}
+.title-mobile{
+    display: none;
 }
 
 /* Fourth section */
@@ -175,6 +187,9 @@ section.second-section{
     font-size: 4em;
     font-weight: bold;
     text-align: center;
+}
+.content-mobile{
+    display: none;
 }
 h6.subtitle-column{
     color: #011C1C;
@@ -202,8 +217,8 @@ h5.title-column{
 }
 .group-column-1 > .group-text-1{
     border-top: 2px solid #00AA89;
-    margin: 0 -15px 0 20px;
-    padding: 0 15px 0 0;
+    margin: 0 -15px 0 35px;
+    padding: 0 25px 0 0;
 }
 .group-column-1 > .group-text-1 > h6{
     margin-top: -10px;
@@ -213,14 +228,21 @@ h5.title-column{
 }
 .group-column-1 > .group-text-2{
     min-height: 100px;
-    margin: 0 -2px 0 0;
+    margin: 0 -12px 0 0 !important;
     height: auto;
 }
-.group-text-2 > div > .col-9 > .texts-group-text-2{
+.group-column-1 > .group-text-2 > .row{
+    width: 100%;
+    margin: 0 -15px 0 15px;
+}
+.group-column-1 > .group-text-2 > .row > div{
+    padding: 0;
+}
+.group-text-2 > div > .col-10 > .texts-group-text-2{
     height: auto;
     background-color: #E0E0E0;
-    padding: 20px 0 0 20px;
-    margin: 0 -50px 0 0;
+    padding: 20px 0 0 0;
+    margin: 0 -20px 0 20px;
     position: relative;
     z-index: 1;
 }
@@ -251,9 +273,12 @@ h5.title-column{
     z-index: 1;
     position: relative;
     border-top: 2px solid #00AA89;
+    padding-right: 0;
+    max-height: 350px;
 }
 .group-column-3 > .group-text-4{
-    padding: 0 0 0 70px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 60px;
 }
 .group-column-3 > .group-text-4 > h6{
     margin-top: -10px;
@@ -280,6 +305,7 @@ h5.title-column{
     background-image: url("../img/imgFifthSection.png");
     background-size: 100% 100%;
     background-color: #011913;
+    background-attachment: fixed;
     padding: 50px;
 }
 .text-bonus{
@@ -304,10 +330,10 @@ h5.title-column{
 .fifth-section > div{
     max-width: 850px;
 }
-.fifth-section > div > div > .col-4{
+.fifth-section > div > div > .col-md-4{
     padding: 25px;
 }
-.fifth-section > div > div > .col-4:nth-child(-n+2){
+.fifth-section > div > div > .col-md-4:nth-child(-n+2){
     border-right: 2px solid #00E1BE;
 }
 
@@ -350,7 +376,7 @@ h5.title-column{
     margin: -30px 0 -30px 0;
 }
 .text-price-1{
-    margin: 30px 0 auto 0;
+    margin: 20px 0 auto 0;
     font-size: 4em;
 }
 .text-price-2{
@@ -359,7 +385,7 @@ h5.title-column{
     font-weight: bold;
 }
 .text-price-3{
-    margin: auto 0 35px 0;
+    margin: auto 0 25px 0;
     font-size: 3em;
 }
 .text-price-4{
