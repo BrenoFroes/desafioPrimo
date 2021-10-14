@@ -1,6 +1,4 @@
-@font-face { font-family: D-DIN; src: url('D-DIN.otf'); } 
-@font-face { font-family: D-DIN; font-weight: bolder; src: url('../fonts/D-DIN-Bold.otf');}
-@font-face { font-family: D-DIN; font-weight: condensed; src: url('../fonts/D-DINCondensed.otf');}
+@font-face { font-family: D-DIN; src: url('../fonts/D-DINCondensed.otf');}
 @font-face { font-family: D-DIN; font-weight: bold; src: url('../fonts/D-DINCondensed-Bold.otf');}
 *{
     font-family: 'D-DIN', 'Segoe UI', sans-serif;
@@ -19,12 +17,13 @@ div.line-1{
 }
 section.first-section{
     background-color: #011913;
-    max-height: 660px;
+    height: auto;
+    max-height: 700px;
     padding: 0;
 }
 h2.title-mentoria{
     color: white;
-    font-size: 4em;
+    font-size: 5em;
     letter-spacing: 0.1em;
 }
 .texts-1{
@@ -33,14 +32,16 @@ h2.title-mentoria{
 }
 .title-smart{
     color: white;
-    font-size: 6em;
+    font-size: 9em;
     font-weight: bold;
     text-align: justify;
     text-justify: inter-word;
+    line-height: 1;
+    margin: 0;
 }
 .text-aprenda{
     color: white;
-    max-width: 350px;
+    font-size: 1.8em;
 }
 .green-text{
     color: #00E1BE;
@@ -51,7 +52,7 @@ h2.title-mentoria{
 }
 .img-first-section{
     margin-top: -83px;
-    max-height: 610px;
+    max-height: 700px;
 }
 .btn-green{
     text-transform: uppercase;
@@ -60,33 +61,38 @@ h2.title-mentoria{
     font-weight: 700;
     font-size: 2em;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 2px 30px;
 }
 
 /* Second section */
 section.second-section{
     background-color: #011913;
     height: auto;
-    padding: 50px 0;
+    padding: 70px 0;
     text-align: center;
 }
 .subtitle{
     text-align: center;
     color: white;
-    max-width: 750px;
-    margin: 48px auto;
-    font-size: 2em;
-    font-weight: bold;
+    max-width: 880px;
+    margin: 24px auto;
+    font-size: 2.5em;
 }
 .green-background-text{
     color: #001E1F;
     background-color: #00E1BE;
-    max-width: 150px;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 0 10px;
+    width: fit-content;
 }
 .list-benefits{
     width: fit-content;
     color: white;
     list-style: none;
+}
+.list-benefits > li{
+    font-size: 1.5em;
 }
 .list-benefits> li:before {
     width: fit-content;
@@ -100,8 +106,9 @@ section.second-section{
     color: #001E1F;
 }
 .background-green{
-    padding: 15px;
+    padding: 10px;
     background-color: #036060;
+    margin: 48px 0;
 }
 
 /* Third section */
@@ -111,18 +118,22 @@ section.second-section{
 }
 .text-tudo{
     color: #00E1BE;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
     margin-left: auto;
-    min-width: 200px;
+    min-width: 250px;
     width: min-content;
+}
+.text-tudo > .green-background-text{
+    font-size: 1.2em;
+    padding: 0;
 }
 .text-tudo > span{
     margin-left: auto;
 }
 .text-logo-mentoria-1{
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     letter-spacing: 0.1em;
     line-height: 1;
     padding: 0;
@@ -132,7 +143,7 @@ section.second-section{
 }
 .text-logo-mentoria-2{
     color: white;
-    font-size: 5.5em;
+    font-size: 7.3em;
     font-weight: bolder;
     line-height: 1;
     padding: 0;
@@ -143,6 +154,8 @@ section.second-section{
 }
 .questions > p{
     color: white;
+    font-size: 1.5em;
+    margin: 0;
 }
 .row .questions:nth-child(-n+4){
     border-right: 2px solid #00E1BE;
@@ -163,33 +176,34 @@ section.second-section{
     font-weight: bold;
     text-align: center;
 }
-.group-column > div > h6{
+h6.subtitle-column{
     color: #011C1C;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     margin: 0;
     line-height: 1;
 }
-.group-column > div > h5{
+h5.title-column{
     color: #00AA89;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
     line-height: 1;
 }
 .group-column > div > p{
     max-width: 180px;
+    font-size: 1em;
 }
 /* First column info */
 .group-column-1{
     border-right: 2px solid #00AA89;
+    margin: 0 -2px 0 0;
     height: auto;
-    min-height: 282px;
 }
 .group-column-1 > .group-text-1{
     border-top: 2px solid #00AA89;
-    margin-right: -15px;
-    padding-right: 15px;
+    margin: 0 -15px 0 20px;
+    padding: 0 15px 0 0;
 }
 .group-column-1 > .group-text-1 > h6{
     margin-top: -10px;
@@ -198,22 +212,24 @@ section.second-section{
     background-color: #E0E0E0;
 }
 .group-column-1 > .group-text-2{
-    min-height: 170px;
+    min-height: 100px;
+    margin: 0 -2px 0 0;
+    height: auto;
 }
-.group-line-1{
-    color: #00AA89;
-    background-color: #00AA89;
-    border: 1px solid #00AA89;
-    width: 85px;
-    margin: 22px -16px -20px auto;
+.group-text-2 > div > .col-9 > .texts-group-text-2{
+    height: auto;
+    background-color: #E0E0E0;
+    padding: 20px 0 0 20px;
+    margin: 0 -50px 0 0;
+    position: relative;
+    z-index: 1;
 }
-.group-line-2{
-    color: #00AA89;
-    background-color: #00AA89;
-    border: 1px solid #00AA89;
-    width: 57px;
-    transform: rotate(90deg);
-    margin: -31px 42px 0 auto;
+.fake-column-1{
+    min-height: 185px;
+    border-left: 2px solid #00AA89;
+    border-bottom: 2px solid #00AA89;
+    position: relative;
+    z-index: 0;
 }
 /* Second column info */
 .group-column-2{
@@ -234,28 +250,29 @@ section.second-section{
     border-left: 2px solid #00AA89;
     z-index: 1;
     position: relative;
-    padding: 0 0 0 70px;
     border-top: 2px solid #00AA89;
+}
+.group-column-3 > .group-text-4{
+    padding: 0 0 0 70px;
 }
 .group-column-3 > .group-text-4 > h6{
     margin-top: -10px;
     padding: 0 5px 0 0;
     background-color: #E0E0E0;
 }
-.group-line-3{
-    color: #00AA89;
-    background-color: #00AA89;
-    border: 1px solid #00AA89;
-    width: 85px;
-    margin: 100px auto -20px -72px;
+.group-text-5 > div > .col-8 > .texts-group-text-5{
+    height: auto;
+    background-color: #E0E0E0;
+    margin-left: -25px;
+    position: relative;
+    z-index: 1;
 }
-.group-line-4{
-    color: #00AA89;
-    background-color: #00AA89;
-    border: 1px solid #00AA89;
-    width: 90px;
-    transform: rotate(90deg);
-    margin: -47px auto 0 -31px;
+.fake-column-2{
+    min-height: 185px;
+    border-right: 2px solid #00AA89;
+    border-bottom: 2px solid #00AA89;
+    position: relative;
+    z-index: 0;
 }
 
 /* Fifth section */
@@ -267,7 +284,7 @@ section.second-section{
 }
 .text-bonus{
     text-align: center;
-    font-size: 6em;
+    font-size: 7em;
     font-weight: bold;
     color: white;
 }
@@ -283,6 +300,9 @@ section.second-section{
     background-color: #00AA89;
     border: 1px solid #00AA89;
     width: 100%;
+}
+.fifth-section > div{
+    max-width: 850px;
 }
 .fifth-section > div > div > .col-4{
     padding: 25px;
