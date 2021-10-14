@@ -19,7 +19,12 @@
     .text-bonus{
         font-size: 5em;
     }
-    
+
+    /* Eigth section */
+    .text-maior{
+        font-size: 3.2em;
+        margin: auto 0;
+    }
 }
 
 /* Tablets */
@@ -163,6 +168,7 @@
     .content-mobile > .group-column-1 > .group-text-1 > .subtitle-column{
         width: 100%;
     }
+    
     /* Fifth section */
     .fifth-line{
         display: none;
@@ -200,7 +206,7 @@
         line-height: 1;
     }
     .text-maior{
-        font-size: 1.6em;
+        font-size: 2em;
         margin: auto 0;
     }
     .text-empreendedor{
@@ -230,7 +236,7 @@
         max-width: 200px;
     }
     .column-img{
-        margin: -20px -30px 0 -30px;
+        margin: -20px -30px 0 -35px;
         min-height: 200px;
         padding: 0;
     }
